@@ -47,6 +47,11 @@ Gemini writes this from my notes and public work, once a week.
   <img src="https://img.shields.io/badge/Node.js-0B1410?style=for-the-badge&logo=nodedotjs&logoColor=4ADE80" alt="Node.js" />
   <img src="https://img.shields.io/badge/NestJS-0B1410?style=for-the-badge&logo=nestjs&logoColor=F87171" alt="NestJS" />
 </p>
+<p align="center">
+  <img src="https://img.shields.io/badge/React-0B1410?style=for-the-badge&logo=react&logoColor=4ADE80" alt="React" />
+  <img src="https://img.shields.io/badge/Vue-0B1410?style=for-the-badge&logo=vuedotjs&logoColor=F87171" alt="Vue" />
+  <img src="https://img.shields.io/badge/Tailwind-0B1410?style=for-the-badge&logo=tailwindcss&logoColor=4ADE80" alt="Tailwind" />
+</p>
 <br/>
 <p align="center">
   <img src="https://img.shields.io/badge/MongoDB-0B1410?style=for-the-badge&logo=mongodb&logoColor=4ADE80" alt="MongoDB" />
