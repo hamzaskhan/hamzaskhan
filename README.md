@@ -1,16 +1,95 @@
-## Hi there 👋
+# Hi, I'm Hamza.
 
-<!--
-**hamzaskhan/hamzaskhan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend engineer.
 
-Here are some ideas to get you started:
+Interested in distributed systems, AI infrastructure, robotics, and related reading.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## Today's engineering log
+
+<!-- TODAY:START -->
+### 28 Jul 2026
+
+- Set up profile README and linked note repos.
+- Added a nightly Action draft that can summarize the day's public commits into this section.
+- Next: replace placeholder notes with ones from actual work.
+
+<!-- TODAY:END -->
+
+---
+
+## Currently
+
+- HMZ House
+- Robotics experiments
+- AI infrastructure experiments
+
+---
+
+## Notes & diagrams
+
+| Repo | What it is |
+|------|------------|
+| [engineering-notes](https://github.com/hamzaskhan/engineering-notes) | Rough notes from building things |
+| [Research-Notes](https://github.com/hamzaskhan/Research-Notes) | Personal notes on topics I'm reading about |
+| [Architectural-Systems](https://github.com/hamzaskhan/Architectural-Systems) | Simple Mermaid sketches of systems |
+| [How-I-solved-it](https://github.com/hamzaskhan/How-I-solved-it) | Write-ups of problems I ran into |
+
+---
+
+## Engineering notes
+
+→ [engineering-notes](https://github.com/hamzaskhan/engineering-notes)
+
+Drafts so far: JWT, Redis, Mongo transactions, locking, a few AI notes.
+
+---
+
+## Reading notes
+
+→ [Research-Notes](https://github.com/hamzaskhan/Research-Notes)
+
+Not papers or publications — just my own notes while reading.
+
+---
+
+## Architecture sketches
+
+→ [Architectural-Systems](https://github.com/hamzaskhan/Architectural-Systems)
+
+FastAPI auth, Mongo replica set, Redis cache, SQS, NestJS modules, a basic control loop.
+
+---
+
+## Other
+
+- [How I solved it](https://github.com/hamzaskhan/How-I-solved-it) — problem write-ups (placeholders for now)
+
+### Week 31
+
+**Built**
+- Profile README
+- Daily log Action skeleton
+- Placeholder folders in the note repos
+
+**Next**
+- Replace placeholders with real notes
+- Add `OPENAI_API_KEY` so the daily log can run
+
+---
+
+## GitHub Metrics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=hamzaskhan&show_icons=true&theme=transparent&hide_border=true&count_private=true" alt="Hamza's GitHub stats" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamzaskhan&layout=compact&theme=transparent&hide_border=true" alt="Top languages" height="165" />
+</p>
+
+---
+
+## Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
+</p>
