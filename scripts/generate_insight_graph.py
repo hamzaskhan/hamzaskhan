@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a deeper, uncommon profile insight graph from public GitHub activity.
 
-Left:  24h chronograph (when you actually push) — not a contribution snake.
+Left:  24h chronograph (when you actually push).
 Right: Domain pressure map + work-mode metrics from repos + recent events.
 """
 
@@ -303,8 +303,8 @@ def render(data: dict[str, Any]) -> str:
 
   <text x="40" y="48" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#fef2f2">Work signature</text>
   <text x="40" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#86efac">24h chronograph</text>
-  <text x="220" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#6b7280">|</text>
-  <text x="240" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fca5a5">not a contribution snake</text>
+  <text x="200" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#6b7280">|</text>
+  <text x="220" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fca5a5">push intensity by hour (PKT)</text>
 
   <text x="780" y="48" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#fef2f2">Domain pressure</text>
   <text x="780" y="78" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#d1d5db">where effort actually concentrates</text>

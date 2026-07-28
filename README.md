@@ -17,9 +17,9 @@ Backend-focused full stack engineer. Production work in distributed systems, AI 
 
 Currently: sole backend on **PitchAwesome** (FastAPI · Mongo · Redis · AWS). Also robotics (Isaac Sim / Lab) and AI pipelines.
 
-## This week
+## Weekly summary | What we achieved
 
-Gemini summarizes notes and public work here **once a week** — not a daily commit dump.
+Gemini writes this from my notes and public work, once a week.
 
 <!-- WEEK:START -->
 ### Week of 28 Jul 2026
@@ -58,9 +58,9 @@ Gemini summarizes notes and public work here **once a week** — not a daily com
   <img src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/main/assets/sparks-divider.svg?v=4" alt="" width="100%" />
 </p>
 
-## Notes
+## Chain of thought
 
-Four windows into how I think. An LLM (Gemini) posts a short weekly summary above from these notes and related commits.
+A resume lists career outcomes. These repos are the notes that document the chain of thought behind them — the path from A to B. What the resume highlights, these explain in depth.
 
 <table width="100%">
   <tr>
@@ -96,5 +96,5 @@ Four windows into how I think. An LLM (Gemini) posts a short weekly summary abov
 ## Work signature
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/main/assets/insight-graph.svg?v=2" alt="Work signature insight graph" width="100%" />
+  <img src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/main/assets/insight-graph.svg?v=3" alt="Work signature insight graph" width="100%" />
 </p>
