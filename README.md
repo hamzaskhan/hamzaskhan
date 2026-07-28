@@ -4,6 +4,8 @@
 
 <p align="center">
   <a href="https://hamzakhan.dev"><strong>hamzakhan.dev</strong></a>
+  ·
+  <a href="https://drive.google.com/drive/folders/1FhPuvKIdNflIOokBWOcP1ska-v2QXM4f"><strong>resume</strong></a>
   · Karachi, Pakistan
   ·
   <a href="mailto:hamzaskhaan@gmail.com">email</a>
@@ -37,21 +39,31 @@ Gemini writes this from my notes and public work, once a week.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-0B1410?style=for-the-badge&logo=python&logoColor=4ADE80" alt="Python" />
-  <img src="https://img.shields.io/badge/Node.js-0B1410?style=for-the-badge&logo=nodedotjs&logoColor=F87171" alt="Node.js" />
-  <img src="https://img.shields.io/badge/TypeScript-0B1410?style=for-the-badge&logo=typescript&logoColor=4ADE80" alt="TypeScript" />
   <img src="https://img.shields.io/badge/FastAPI-0B1410?style=for-the-badge&logo=fastapi&logoColor=F87171" alt="FastAPI" />
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/NestJS-0B1410?style=for-the-badge&logo=nestjs&logoColor=4ADE80" alt="NestJS" />
-  <img src="https://img.shields.io/badge/MongoDB-0B1410?style=for-the-badge&logo=mongodb&logoColor=F87171" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Redis-0B1410?style=for-the-badge&logo=redis&logoColor=4ADE80" alt="Redis" />
+  <img src="https://img.shields.io/badge/JavaScript-0B1410?style=for-the-badge&logo=javascript&logoColor=4ADE80" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TypeScript-0B1410?style=for-the-badge&logo=typescript&logoColor=F87171" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Node.js-0B1410?style=for-the-badge&logo=nodedotjs&logoColor=4ADE80" alt="Node.js" />
+  <img src="https://img.shields.io/badge/NestJS-0B1410?style=for-the-badge&logo=nestjs&logoColor=F87171" alt="NestJS" />
+</p>
+<br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/MongoDB-0B1410?style=for-the-badge&logo=mongodb&logoColor=4ADE80" alt="MongoDB" />
   <img src="https://img.shields.io/badge/PostgreSQL-0B1410?style=for-the-badge&logo=postgresql&logoColor=F87171" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Redis-0B1410?style=for-the-badge&logo=redis&logoColor=4ADE80" alt="Redis" />
+  <img src="https://img.shields.io/badge/Docker-0B1410?style=for-the-badge&logo=docker&logoColor=F87171" alt="Docker" />
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/AWS-0B1410?style=for-the-badge&logo=amazonwebservices&logoColor=4ADE80" alt="AWS" />
-  <img src="https://img.shields.io/badge/Docker-0B1410?style=for-the-badge&logo=docker&logoColor=F87171" alt="Docker" />
-  <img src="https://img.shields.io/badge/Bedrock-0B1410?style=for-the-badge&logo=amazonaws&logoColor=4ADE80" alt="Bedrock" />
-  <img src="https://img.shields.io/badge/Isaac%20Lab-0B1410?style=for-the-badge&logo=nvidia&logoColor=F87171" alt="Isaac Lab" />
+  <img src="https://img.shields.io/badge/GCP-0B1410?style=for-the-badge&logo=googlecloud&logoColor=F87171" alt="GCP" />
+  <img src="https://img.shields.io/badge/Firebase-0B1410?style=for-the-badge&logo=firebase&logoColor=4ADE80" alt="Firebase" />
+</p>
+<br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/Isaac%20Sim-0B1410?style=for-the-badge&logo=nvidia&logoColor=F87171" alt="Isaac Sim" />
+  <img src="https://img.shields.io/badge/Isaac%20Lab-0B1410?style=for-the-badge&logo=nvidia&logoColor=4ADE80" alt="Isaac Lab" />
+  <img src="https://img.shields.io/badge/Ubuntu-0B1410?style=for-the-badge&logo=ubuntu&logoColor=F87171" alt="Ubuntu" />
 </p>
 
 <p align="center">
