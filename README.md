@@ -82,14 +82,18 @@ FastAPI auth, Mongo replica set, Redis cache, SQS, NestJS modules, a basic contr
 ## GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hamzaskhan&show_icons=true&theme=transparent&hide_border=true&count_private=true" alt="Hamza's GitHub stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamzaskhan&layout=compact&theme=transparent&hide_border=true" alt="Top languages" height="165" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=hamzaskhan&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamzaskhan&layout=compact&theme=default&hide_border=true&cache_seconds=86400" alt="Top languages" />
 </p>
 
 ---
 
 ## Contribution Snake
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/output/github-contribution-grid-snake.svg" />
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/output/github-contribution-grid-snake.svg" />
+  </picture>
+</div>
