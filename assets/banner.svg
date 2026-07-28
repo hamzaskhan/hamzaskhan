@@ -50,13 +50,13 @@
   <rect x="4" y="4" width="1592" height="412" fill="none" stroke="url(#edge)" stroke-width="3"/>
 
   <text x="80" y="175" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="700" fill="url(#nameFill)">HAMZA KHAN</text>
-  <text x="84" y="235" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="600" fill="#e5e7eb">BACKEND ENGINEER</text>
+  <text x="84" y="235" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" fill="#e5e7eb">BACKEND-FOCUSED FULL STACK ENGINEER</text>
   <text x="84" y="285" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#a7f3d0">distributed systems</text>
   <text x="320" y="285" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#6b7280">/</text>
   <text x="340" y="285" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#fecaca">AI infrastructure</text>
   <text x="540" y="285" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#6b7280">/</text>
-  <text x="560" y="285" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#86efac">robotics</text>
-  <text x="84" y="340" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9ca3af">build under pressure. break the easy path.</text>
+  <text x="560" y="285" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#86efac">cloud-native</text>
+  <text x="84" y="340" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9ca3af">hamzakhan.dev  |  Python and Node.js  |  build under pressure</text>
 
   <!-- sparks / embers -->
   <g>

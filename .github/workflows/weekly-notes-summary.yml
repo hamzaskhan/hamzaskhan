@@ -1,47 +1,43 @@
-name: Daily engineering log
+name: Weekly notes summary
 
 on:
   schedule:
-    # ~00:30 Asia/Karachi (UTC+5)
-    - cron: "30 19 * * *"
+    # Sunday ~00:30 Asia/Karachi (UTC+5) → Saturday 19:30 UTC
+    - cron: "30 19 * * 6"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  generate-log:
+  weekly-summary:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Generate TODAY.md and sync README
+      - name: Generate weekly notes summary
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: hamzaskhan
           LOG_TIMEZONE: Asia/Karachi
-          # Google AI Studio key — https://aistudio.google.com/api-keys
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # Also accept common alternate secret names if you used one of these
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
-        run: python scripts/generate_daily_log.py
+        run: python scripts/generate_weekly_summary.py
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add TODAY.md README.md
+          git add WEEKLY.md TODAY.md README.md
           if git diff --staged --quiet; then
             echo "No changes"
             exit 0
           fi
-          git commit -m "chore: update daily engineering log"
+          git commit -m "chore: update weekly notes summary"
           git push
