@@ -73,3 +73,15 @@
     </td>
   </tr>
 </table>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/main/assets/sparks-divider.svg?v=3" alt="" width="100%" />
+</p>
+
+## Work signature
+
+Deeper than contribution counts — when you push, and where effort concentrates.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hamzaskhan/hamzaskhan/main/assets/insight-graph.svg?v=1" alt="Work signature insight graph" width="100%" />
+</p>
