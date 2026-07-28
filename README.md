@@ -75,15 +75,15 @@ FastAPI auth, Mongo replica set, Redis cache, SQS, NestJS modules, a basic contr
 
 **Next**
 - Replace placeholders with real notes
-- Add `OPENAI_API_KEY` so the daily log can run
+- Run **Daily engineering log** (uses `GEMINI_API_KEY`)
 
 ---
 
 ## GitHub Metrics
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=hamzaskhan&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamzaskhan&layout=compact&theme=default&hide_border=true&cache_seconds=86400" alt="Top languages" />
+  <img height="165" src="./profile/stats.svg" alt="GitHub stats" />
+  <img height="165" src="./profile/top-langs.svg" alt="Top languages" />
 </p>
 
 ---

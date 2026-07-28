@@ -7,6 +7,7 @@ import json
 import os
 import re
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -17,6 +18,17 @@ TODAY_PATH = ROOT / "TODAY.md"
 README_PATH = ROOT / "README.md"
 USERNAME = os.environ.get("GITHUB_USERNAME", "hamzaskhan")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+
+# Google AI Studio / Gemini (preferred)
+GEMINI_API_KEY = (
+    os.environ.get("GEMINI_API_KEY")
+    or os.environ.get("GOOGLE_API_KEY")
+    or os.environ.get("GOOGLE_AI_API_KEY")
+    or None
+)
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL") or "gemini-2.0-flash"
+
+# Optional fallbacks
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY") or None
 OPENAI_BASE_URL = os.environ.get("OPENAI_BASE_URL") or "https://api.openai.com/v1"
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL") or "gpt-4o-mini"
@@ -37,7 +49,7 @@ def now_local() -> datetime:
 def http_json(url: str, headers: dict[str, str] | None = None, body: dict[str, Any] | None = None) -> Any:
     data = None if body is None else json.dumps(body).encode("utf-8")
     req = urllib.request.Request(url, data=data, method="GET" if body is None else "POST")
-    req.add_header("Accept", "application/vnd.github+json")
+    req.add_header("Accept", "application/json")
     req.add_header("User-Agent", "hamzaskhan-daily-log")
     if headers:
         for k, v in headers.items():
@@ -46,6 +58,7 @@ def http_json(url: str, headers: dict[str, str] | None = None, body: dict[str, A
         req.add_header("Content-Type", "application/json")
     if GITHUB_TOKEN and "api.github.com" in url:
         req.add_header("Authorization", f"Bearer {GITHUB_TOKEN}")
+        req.add_header("Accept", "application/vnd.github+json")
     with urllib.request.urlopen(req, timeout=60) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
@@ -105,6 +118,38 @@ Commits from the last day:
 """
 
 
+def call_gemini(prompt: str) -> str:
+    """Google AI Studio Generative Language API."""
+    model = GEMINI_MODEL
+    qs = urllib.parse.urlencode({"key": GEMINI_API_KEY})
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?{qs}"
+    result = http_json(
+        url,
+        body={
+            "systemInstruction": {
+                "parts": [{"text": "Write short, plain engineering logs. Do not hype or oversell."}]
+            },
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": {
+                "temperature": 0.4,
+                "maxOutputTokens": 500,
+            },
+        },
+    )
+    candidates = result.get("candidates") or []
+    if not candidates:
+        raise KeyError(f"no candidates in Gemini response: {result}")
+    parts = candidates[0].get("content", {}).get("parts") or []
+    text = "".join(p.get("text", "") for p in parts).strip()
+    if not text:
+        raise KeyError("empty Gemini text")
+    # Strip accidental markdown fences
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:markdown|md)?\n?", "", text)
+        text = re.sub(r"\n?```$", "", text)
+    return text.strip()
+
+
 def call_openai(prompt: str) -> str:
     result = http_json(
         f"{OPENAI_BASE_URL.rstrip('/')}/chat/completions",
@@ -142,12 +187,24 @@ def call_anthropic(prompt: str) -> str:
 def generate_log(date_label: str, commits: list[dict[str, str]]) -> str:
     prompt = llm_prompt(date_label, commits)
     try:
+        if GEMINI_API_KEY:
+            print(f"Using Gemini model={GEMINI_MODEL}")
+            return call_gemini(prompt)
         if OPENAI_API_KEY:
             return call_openai(prompt)
         if ANTHROPIC_API_KEY:
             return call_anthropic(prompt)
-    except (urllib.error.URLError, urllib.error.HTTPError, KeyError, TimeoutError) as exc:
-        print(f"LLM call failed ({exc}); using fallback.")
+        print("No LLM API key found (expected GEMINI_API_KEY).")
+    except (urllib.error.URLError, urllib.error.HTTPError, KeyError, TimeoutError, json.JSONDecodeError) as exc:
+        detail = ""
+        if isinstance(exc, urllib.error.HTTPError):
+            try:
+                detail = exc.read().decode("utf-8", errors="replace")[:400]
+            except Exception:
+                detail = str(exc)
+            print(f"LLM call failed HTTP {exc.code}: {detail}; using fallback.")
+        else:
+            print(f"LLM call failed ({exc}); using fallback.")
     return fallback_log(date_label, commits)
 
 
