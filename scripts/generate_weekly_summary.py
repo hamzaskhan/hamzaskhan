@@ -128,7 +128,6 @@ def fallback_log(label: str, commits: list[dict[str, str]], notes: list[str]) ->
     if not notes and not commits:
         lines.append("- Quiet week on public GitHub / notes.")
         lines.append("")
-    lines.extend(["Next:", "Add one production note worth summarizing next week.", ""])
     return "\n".join(lines)
 
 
@@ -147,7 +146,6 @@ Structure:
 
 - Prefer summarizing **notes** (engineering notes, research notes, architecture, how-I-solved-it)
 - Then at most 2 bullets on other public work if useful
-- End with "Next:" and one concrete follow-up
 
 Notes / note-repo activity this week:
 {note_block}
