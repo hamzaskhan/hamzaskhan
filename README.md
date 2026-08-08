@@ -24,11 +24,9 @@ Currently: sole backend on **PitchAwesome** (FastAPI · Mongo · Redis · AWS). 
 Gemini writes this from my notes and public work, once a week.
 
 <!-- WEEK:START -->
-### Week of 02 Aug 2026
+### Week of 09 Aug 2026
 
-- Drafted engineering notes on JWT, Mongo transactions, RAG, agents, and embeddings.
-- Added reading notes and Mermaid architecture sketches.
-- Started how-I-solved-it write-ups for auth boundaries and Motor/event-loop behaviour.
+- Quiet week on public GitHub / notes.
 <!-- WEEK:END -->
 
 <p align="center">
