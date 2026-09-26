@@ -1,3 +1,3 @@
-### Week of 20 Sep 2026
+### Week of 27 Sep 2026
 
 - Quiet week on public GitHub / notes.
